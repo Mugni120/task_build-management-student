@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Records Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Records Management</h1>
+        
+        <!-- Form untuk Add / Update -->
+        <form id="student-form">
+            <input type="hidden" id="student-id">
+            <input type="text" id="name" placeholder="Nama Siswa" required>
+            <input type="number" id="age" placeholder="Umur" required>
+            <input type="text" id="grade" placeholder="Kelas/Grade" required>
+            <button type="submit" id="submit-btn">Add Student</button>
+        </form>
+
+        <!-- Tabel untuk View Student Details -->
+        <table id="students-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nama</th>
+                    <th>Umur</th>
+                    <th>Kelas</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="student-list">
+                <!-- Data akan dimuat melalui JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

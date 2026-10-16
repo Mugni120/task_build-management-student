@@ -1,0 +1,5 @@
+node_modules/
+backend/students.db
+backend/students.db-journal
+backend/students.db-wal
+backend/students.db-shm
